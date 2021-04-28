@@ -3,7 +3,7 @@ package com.atguigu.java;
 /*
  * 抽象类的运用：TemplateMethod(模板方法)设计模式
  */
-public class TemplateMethodTest {
+public class TemplateMethodPatternTest {
 	
 	public static void main(String[] args) {
 		Template template = new SubTemplate();
