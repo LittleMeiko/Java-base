@@ -17,12 +17,14 @@ public class InnerClassTest {
 		OuterClass oc = new OuterClass();
 		OuterClass.BB bb = oc.new BB();
 		bb.show();
+		bb.info("Inner BB");
+	
 	}
 }
 
 class OuterClass {
 	
-	String name;
+	String name = "OuterClass";
 	int age;
 	
 	public void eat() {
@@ -45,6 +47,7 @@ class OuterClass {
 	// 非静态成员内部类
 	class BB {
 		int id;
+		String name = "BB";
 		
 		public BB() {
 			System.out.println("非静态内部类BB的构造方法...");
@@ -53,6 +56,12 @@ class OuterClass {
 		public void show() {
 			OuterClass.this.eat();
 			System.out.println("非静态内部类BB的show方法");
+		}
+		
+		public void info(String name) {
+			System.out.println(name);
+			System.out.println(this.name);
+			System.out.println(OuterClass.this.name);
 		}
 	}
 	
