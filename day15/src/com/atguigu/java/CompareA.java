@@ -10,7 +10,7 @@ public interface CompareA {
 		System.out.println("CompareA:上海");
 	}
 	
-	default void mehtod3() {
+	default void method3() {
 		System.out.println("CompareA:深圳");
 	}
 }

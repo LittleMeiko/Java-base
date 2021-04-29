@@ -2,7 +2,7 @@ package com.atguigu.java;
 
 public class SuperClass {
 	
-	public void mehtod3() {
+	public void method3() {
 		System.out.println("SuperClass:深圳");
 	}
 }
