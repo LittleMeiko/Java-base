@@ -1,7 +1,5 @@
 package com.atguigu.java;
 
-import static org.hamcrest.CoreMatchers.both;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
